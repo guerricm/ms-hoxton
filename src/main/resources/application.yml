@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ms-hoxton
+
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://zipkin-dev.hcuge.ch
+
+  cloud:
+    bus:
+      enabled: false
+      refresh:
+        enabled: false
+      trace:
+        enabled: false
+eureka:
+  client:
+    enabled: false          
