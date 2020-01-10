@@ -7,8 +7,9 @@ spring:
     sampler:
       probability: 1
   zipkin:
-    base-url: http://zipkin-dev.hcuge.ch
-
+    base-url: https://zipkin-dev.hcuge.ch
+    sender:
+      type: WEB
   cloud:
     bus:
       enabled: false
